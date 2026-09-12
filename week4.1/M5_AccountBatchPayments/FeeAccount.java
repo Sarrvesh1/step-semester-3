@@ -1,9 +1,3 @@
-/**
- * M5. Account Batch Payments
- *
- * processPayment() uses instanceof to dispatch between a plain FeeAccount and
- * a HostelFeeAccount, and keeps a running count of each type processed.
- */
 public class FeeAccount {
     void processPayment(FeeAccount account, double amount) {
         if (account instanceof HostelFeeAccount) {

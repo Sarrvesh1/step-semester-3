@@ -1,10 +1,3 @@
-/**
- * M1. Library Book Cataloguing
- *
- * Two constructors linked through this() chaining: a book with a confirmed
- * ISBN is set directly, a book with none defaults to "PENDING" - never blank
- * or null - by chaining into the two-arg constructor.
- */
 public class LibraryBook {
     private String title;
     private String isbn;

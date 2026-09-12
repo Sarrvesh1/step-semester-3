@@ -1,9 +1,3 @@
-/**
- * M2. Payroll Batch Bonus Round
- *
- * The constructor and raiseSalary() both take a parameter named the same as
- * the field it fills, so this.salary vs salary must be resolved with this.
- */
 public class Employee {
     private String empId;
     private double salary;

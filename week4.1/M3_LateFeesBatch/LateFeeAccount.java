@@ -1,10 +1,3 @@
-/**
- * M3. Late Fees - Skip the On-Time Accounts
- *
- * calculateLateFee() and printSummary() are final so the fee formula can
- * never be quietly changed by a subclass. Accounts with daysLate <= 0 are
- * skipped entirely rather than charged a fee of Rs 0.
- */
 public class LateFeeAccount {
     private String regNo;
     private double totalFee;

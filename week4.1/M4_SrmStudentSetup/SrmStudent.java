@@ -1,9 +1,3 @@
-/**
- * M4. One-Time College Setup, Many Students
- *
- * collegeName and academicYear are set exactly once through a static block,
- * no matter how many SrmStudent objects get created in the batch loop.
- */
 public class SrmStudent {
     static String collegeName;
     static String academicYear;
