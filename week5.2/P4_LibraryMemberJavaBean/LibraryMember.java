@@ -1,12 +1,3 @@
-/**
- * P4. LibraryMember JavaBean & Security Answer Property
- *
- * A public no-arg constructor plus JavaBean-compliant getX()/setX() pairs
- * (isPremiumMember(), not getPremiumMember()). membershipId is write-once:
- * setMembershipId() genuinely exists (the framework requires it) but only
- * the first call ever takes effect. securityAnswer is stored only as a
- * one-way transformed value, with no getter anywhere on the class.
- */
 public class LibraryMember {
     private String membershipId;
     private boolean membershipIdSet;

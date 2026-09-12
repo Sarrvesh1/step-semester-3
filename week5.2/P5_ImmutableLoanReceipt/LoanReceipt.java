@@ -1,16 +1,3 @@
-/**
- * P5. Immutable Loan Receipt & Nightly Circulation Ledger
- *
- * LoanReceipt is immutable: fields are final, bookIds is defensively copied
- * in and out, and withCorrectedBookId() returns a brand-new object rather
- * than mutating this one. The class is left non-final (rather than final)
- * specifically so ReferenceOnlyLoanReceipt can extend it, as its own
- * constructor signature requires; every other immutability requirement is
- * honoured exactly. CirculationLedger sets its one-time, class-level branch
- * code through a static block, and its nightly processor uses instanceof to
- * settle a ReferenceOnlyLoanReceipt differently from a regular one while
- * tolerating null entries.
- */
 public class LoanReceipt {
     private final String memberId;
     private final String[] bookIds;

@@ -1,20 +1,3 @@
-/**
- * P1. Membership Field Reach Checker
- * P2. Reference Desk Subclass Reach
- *
- * classifyAccess() applies the real Java visibility rules across all five
- * accessorContext values (same rule table as the mentor MovieTicket set):
- * private only allows SAME_CLASS; default adds SAME_PACKAGE; protected
- * further allows a subclass in a different package, but only through a
- * variable declared as the subclass's own type, never through one declared
- * as the parent type; public is always allowed.
- *
- * summarizeByModifier() groups a batch's results per modifier - including a
- * modifier with zero attempts - rather than producing one flat total.
- *
- * firstDeniedAttempt() scans strictly in order and stops at the first denial
- * it finds, instead of building a full result set and searching it after.
- */
 public class AccessChecker {
     private static final String[] MODIFIERS = {"private", "default", "protected", "public"};
 

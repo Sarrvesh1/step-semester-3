@@ -1,13 +1,3 @@
-/**
- * P1. Membership Field Reach Checker (continued)
- *
- * Real access level chosen per field: membershipPin is private (inaccessible
- * outside LibraryMember itself); branchCode is default/package-private
- * (reachable only within LibraryMember's own package); finesOwed is also
- * default here (its full cross-package/subclass behaviour is exercised
- * separately by AccessChecker in Problem 2); displayName is public since it
- * must be reachable from anywhere.
- */
 public class LibraryMember {
     private String membershipPin;
     String branchCode;

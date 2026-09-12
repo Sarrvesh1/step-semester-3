@@ -1,12 +1,3 @@
-/**
- * P3. Book Copy Circulation Guard
- *
- * copiesTotal and copiesAvailable are private with no way to set
- * copiesAvailable directly from outside; checkOut() silently rejects a call
- * with nothing available, and checkIn() silently rejects a call once the
- * inventory is already back to full capacity - the count never leaves
- * [0, copiesTotal].
- */
 public class BookInventory {
     private int copiesTotal;
     private int copiesAvailable;
