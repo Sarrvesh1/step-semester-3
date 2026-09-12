@@ -1,9 +1,3 @@
-/**
- * A2. this Keyword for Canteen Inventory - Batch Restock
- *
- * The constructor and restock() both take a parameter named the same as the
- * field it fills, so this.stock vs stock must be resolved with this.
- */
 public class Item {
     private String itemName;
     private int stock;

@@ -1,10 +1,3 @@
-/**
- * A5. instanceof Inside a Loop - Canteen Closing-Time Payment Dispatch
- *
- * processTransaction() uses instanceof to tell a CardPayment apart from a
- * plain Payment, charging the 2% processing fee only where it applies, and
- * keeps a running total of everything actually collected.
- */
 public class Payment {
     private double totalCollected = 0;
 

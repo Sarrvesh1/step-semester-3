@@ -1,9 +1,3 @@
-/**
- * A4. Static Block - Library Membership Card Setup
- *
- * libraryName and validUntil are set exactly once through a static block, no
- * matter how many MembershipCard objects get created in the batch loop.
- */
 public class MembershipCard {
     static String libraryName;
     static String validUntil;

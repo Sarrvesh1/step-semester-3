@@ -1,9 +1,3 @@
-/**
- * A1. Overloaded Constructors for Hackathon Registration
- *
- * A solo entrant gets a placeholder team name by chaining, via this(...),
- * into the constructor used for participants who already have a team.
- */
 public class Participant {
     private String name;
     private String teamName;

@@ -1,10 +1,3 @@
-/**
- * A3. final Method - Parking Overstay Fine Calculator
- *
- * calculateFine() and printReceipt() are final so the fine formula can never
- * be overridden by a future "VIP parking" subclass. Tickets with no overstay
- * are skipped entirely rather than charged a fine of Rs 0.
- */
 public class ParkingTicket {
     private String vehicleNo;
     private double ratePerMinute;
