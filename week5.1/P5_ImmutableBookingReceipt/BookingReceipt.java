@@ -1,14 +1,3 @@
-/**
- * P5. Immutable Booking Receipt & Nightly Settlement
- *
- * BookingReceipt is immutable: every field is final, seatNumbers is
- * defensively copied on the way in and the way out, and "changing" a receipt
- * returns a brand-new object via withUpdatedSeat() rather than mutating this
- * one. The class is left non-final (rather than final) specifically so that
- * GroupBookingReceipt can extend it - required for processNightlySettlement's
- * instanceof-based dispatch over a shared BookingReceipt[] array; every
- * other requirement is honoured exactly.
- */
 public class BookingReceipt {
     private final String bookingId;
     private final String[] seatNumbers;

@@ -1,11 +1,3 @@
-/**
- * P3. Seat Booking Encapsulation Guard
- *
- * seatsTotal and seatsAvailable are private with no way to set
- * seatsAvailable directly from outside; the constructor rejects a
- * non-positive seatsTotal, and bookSeat()/cancelBooking() silently reject
- * any transition that would push the count out of [0, seatsTotal].
- */
 public class CineScreen {
     private int seatsTotal;
     private int seatsAvailable;

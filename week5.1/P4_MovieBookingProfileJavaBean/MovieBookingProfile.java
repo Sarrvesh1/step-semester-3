@@ -1,12 +1,3 @@
-/**
- * P4. MovieBookingProfile JavaBean & OTP Property
- *
- * A public no-arg constructor plus a name-only convenience constructor that
- * chains via this(...). Every ordinary field gets a JavaBean-compliant
- * getX()/setX() pair (isConfirmed(), not getConfirmed()). otp is settable via
- * setOtp() but has no getter anywhere on the class - a true write-only
- * property.
- */
 public class MovieBookingProfile {
     private String name;
     private boolean confirmed;

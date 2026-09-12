@@ -1,16 +1,3 @@
-/**
- * P1. Movie Ticket Field Visibility Checker
- * P2. Subclass Ticket Access
- *
- * classifyAccess() decides ALLOWED/DENIED purely from Java's real visibility
- * rules for all five accessorContext values: private only ever allows
- * SAME_CLASS; default additionally allows SAME_PACKAGE; protected further
- * allows a subclass in a different package - but only when reached through a
- * variable declared as the subclass's own type (SUBCLASS_DIFFERENT_PACKAGE_
- * OWN_TYPE), never through one declared as the parent type (Java resolves
- * protected access by the reference's compile-time type, not the object's
- * runtime type); public is always allowed.
- */
 public class AccessChecker {
     static String classifyAccess(String fieldModifier, String accessorContext) {
         switch (fieldModifier) {
